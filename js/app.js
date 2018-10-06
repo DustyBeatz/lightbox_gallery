@@ -1,9 +1,4 @@
-var openmodal;
-var closeModal;
-var showSlides;
-var plusSlide;
-var currentSlide;
-
+//Still have to understand why the variables are undefined and what they do.
 function openmodal() {
     console.log("modalopening");
     document.getElementById('myModal').style.display = "block";
