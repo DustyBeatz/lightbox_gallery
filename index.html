@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Light Box Gallery</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
+
+<body>
+<h2>Lightbox Gallery</h2>
+<!-- Here's the gallery it's split into columns-->
+<div class="row">
+    <div class="column">
+        <img src="images/grandfalls_tb.jpg" onclick="openmodal();CurrentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+            <img src="images/horizontal_lake_tb.jpg" onclick="openmodal();CurrentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+            <img src="images/pop-a-squat_tb.jpg" onclick="openmodal();CurrentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+            <img src="images/vertical_lake_tb.jpg" onclick="openmodal();CurrentSlide(4)" class="hover-shadow cursor">
+    </div>
+</div>
+
+<!-- this is where the img modal starts-->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="slides">
+            <div class="numbertext"> 1 / 4 </div>
+            <img src="images/grandfalls.jpg">
+        </div>
+
+        <div class="slides">
+                <div class="numbertext"> 2 / 4 </div>
+                <img src="images/horizontal_lake.jpg">
+            </div>
+
+            <div class="slides">
+                    <div class="numbertext"> 3 / 4 </div>
+                    <img src="images/pop-a-squat.jpg">
+                </div>
+
+                <div class="slides">
+                        <div class="numbertext"> 4 / 4 </div>
+                        <img src="images/vertical_lake.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+
+                    <!-- here is where you'll see the full size images on the page-->
+                    <div class="column">
+                        <img class="demo cursor" src="images/grandfalls.jpg" onclick="CurrentSlide(1)" alt="Here's a photo my sister took of Grandfalls in New Brunswick">
+                    </div>
+                    
+                    <div class="column">
+                            <img class="demo cursor" src="images/horizontal_lake.jpg" onclick="CurrentSlide(2)" alt="This is another great photo my sister took while in New Brunswick">
+                        </div>
+
+                        <div class="column">
+                                <img class="demo cursor" src="images/pop-a-squat.jpg" onclick="CurrentSlide(3)" alt="A photo of me popping a squat by the lake getting those artsy angles">
+                            </div>
+                    
+                            <div class="column">
+                                    <img class="demo cursor" src="images/vertical_lake.jpg" onclick="CurrentSlide(4)" alt="A vertical shot of the lake we visited, in New Brunswick">
+                                </div>
+
+                                <!-- i can add a footer down here later-->
+    </div>
+</div>
+
+</body>
+
+</html>
